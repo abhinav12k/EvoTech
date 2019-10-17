@@ -40,15 +40,12 @@
   position: relative;
   font-family: Arial;
 }
-
 .custom-select select {
   display: none; /*hide original SELECT element: */
 }
-
 .select-selected {
   background-color: grey ;
 }
-
 /* Style the arrow inside the select element: */
 .select-selected:after {
   position: absolute;
@@ -60,13 +57,11 @@
   border: 6px solid transparent;
   border-color: #fff transparent transparent transparent;
 }
-
 /* Point the arrow upwards when the select box is open (active): */
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent #fff transparent;
   top: 7px;
 }
-
 /* style the items (options), including the selected item: */
 .select-items div,.select-selected {
   color: #ffffff;
@@ -75,7 +70,6 @@
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
 }
-
 /* Style items (options): */
 .select-items {
   position: absolute;
@@ -85,12 +79,10 @@
   right: 0;
   z-index: 99;
 }
-
 /* Hide the items when the select box is closed: */
 .select-hide {
   display: none;
 }
-
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -100,15 +92,12 @@
   position: relative;
   font-family: Arial;
 }
-
 .custom-select1 select {
   display: none; /*hide original SELECT element: */
 }
-
 .select-selected {
   background-color: grey ;
 }
-
 /* Style the arrow inside the select element: */
 .select-selected:after {
   position: absolute;
@@ -120,13 +109,11 @@
   border: 6px solid transparent;
   border-color: #fff transparent transparent transparent;
 }
-
 /* Point the arrow upwards when the select box is open (active): */
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent #fff transparent;
   top: 7px;
 }
-
 /* style the items (options), including the selected item: */
 .select-items div,.select-selected {
   color: #ffffff;
@@ -135,7 +122,6 @@
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
 }
-
 /* Style items (options): */
 .select-items {
   position: absolute;
@@ -145,12 +131,10 @@
   right: 0;
   z-index: 99;
 }
-
 /* Hide the items when the select box is closed: */
 .select-hide {
   display: none;
 }
-
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -171,25 +155,21 @@
 		  width: 30%;
 		  float: left;
 		  }
-
 .float-right-area {
 		  width: 70%;
 		  float: left;
 		  }
-
 .inner-left	  {
 		  padding: 5px 5px 5px 5px;
 		  margin-right: 100px;
  		   margin-left: 10px;
 		  min-height: 60px;
 		  }
-
 .inner-right	  {
 		  font-size: 11px;
 		  padding: 5px 5px 5px 5px;
 		  min-height: 60px;
 		  }
-
 .clear-floated	  { clear: both; height: 1px; font-size: 1px; line-height: 1px; padding: 0; margin: 0; }
 </style>
    <style>
@@ -205,6 +185,18 @@
      flaot: right;
      width: 35%;
    }
+
+   .login-form input[type="submit"] {
+     width: 100%;
+     padding: 15px;
+     background-color: #535b63;
+     border: 0;
+     box-sizing: border-box;
+     cursor: pointer;
+     font-weight: bold;
+     color: #ffffff;
+   }
+
    </style>
    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
    <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
@@ -246,7 +238,7 @@
 
 <div class="float-left-area">
 <div class="inner-left" align = justify>
-   <div id="map" style="display: none" onclick="hideShow()"><div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=bvcoe&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.utilitysavingexpert.com">Utility Saving Expert</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:500p}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:500px;}</style></div>
+   <div id="map" style="display: none" onclick="hideShow()"><div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=bvcoe&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.utilitysavingexpert.com">Utility Saving Expert</a></div><style>.mapouter{position:relative;text-align:right;height:500px;width:500px}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:890px;}</style></div>
     </div>
         </div>
 </div>
@@ -254,7 +246,7 @@
 <div class="inner-right">
   <div class="journey">
     <h1>Plan your journey</h1>
-    <form class="travel" action="drive.html" method="post">
+
       <button type="button" name="curr-loc" onclick="javascript:showlocation()">Get your location</button>
       <p></p>
 <div class="custom-select" style="width:300px;">
@@ -283,7 +275,7 @@
       <option value="21">Paschim Vihar (West)</option>
       <option value="22">Peera Garhi</option>
       <option value="23">Udyog Nagar</option>
-      <option value="24">Nangloi Rly Station</option>  
+      <option value="24">Nangloi Rly Station</option>
   </select>
 </div>
 <p>
@@ -315,14 +307,18 @@
       <option value="21">Paschim Vihar (West)</option>
       <option value="22">Peera Garhi</option>
       <option value="23">Udyog Nagar</option>
-      <option value="24">Nangloi Rly Station</option>  
+      <option value="24">Nangloi Rly Station</option>
   </select>
-        </form>
+
   </div>
 
 <p></p>
-  <button type="button" name="submit">Submit</button>
-</div></div>
+<div class="login-form">
+<form action="final" method="POST">
+  <input type="submit" onclick="location.href='https://htmlpreview.github.io/?https://github.com/abhinav78910/EvoTech/blob/master/final.html';"/>
+</form>
+</div>
+
   <script>
   var x, i, j, selElmnt, a, b, c;
   /*look for any elements with the class "custom-select":*/
